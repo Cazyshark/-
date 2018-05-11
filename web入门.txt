@@ -1,0 +1,84 @@
+<!doctype html><!--申明文档类型 为 html5 DTD-->
+<html><!--开始标签 双网页文件里面的所有内容--->
+	<head><!--给浏览器和搜索引擎看的-->
+		<title>css3旋转信息简介</title><--!网页的名字-->
+		<meta charset="utf-8“><！--网页的语言-->
+		<meta name="keywords" content="CSS3,3D,王章"><!--网站的招牌-->
+		<meta name="description",content="ddddddddd"><!---网站的广告-->
+		<style>/** 唯一的标签注释 网页上的装修公司 装修页面上的元素的属性样式 css **/
+			body,p{
+			           margin:0px;
+			           }
+			.message{
+				dispaly:flex;/*弹性盒模型*//*两条轴 交叉轴&主轴 弹性盒模型的子元素都要沿着父元素的主轴排列*/
+				justify-content:space-between;/*弹性盒模型的子元素在父元素的主轴上如何排列*/				
+
+				width:1000px;
+				/*属性名称：属性值（单位）；*/
+				height：1000px；
+				background-color：#d22626;/*背景颜色：给元素加一个颜色*/
+				margin:60px auto 0 auto /* 可以设置4个值*//*上，右，下，左*/			
+			}
+			.messagelist{
+				width:30px;
+				height:30px;
+				background:blue/*六个相同的字符可以只写三个*/;
+				perspective:1000px/*Z轴值的设置*//*最大1000px*/
+			}
+			.messagelist:hover .listtext{
+				transform:rotateY(0deg);
+				transition:1.5s;/*过度:设置转动的延时*/
+				}
+			.lsttext,/*"逗号"并列选择器：同时选中多个元素并设置相同的属性*/.listPic{
+				width:300px;
+				height:300px;
+				background-image:url:("images/aaa.jpg");/*背景图片*/
+				
+			}
+			p{
+				color:yellow;
+				background-color:#ffffff/*不透明的光 透明的光rgb*/;
+				background-color:rbga(0,0,0,0.7);
+				text-align:center;/*文本居中对齐*/
+				dispaly:flex;
+				align-items:center;/*设置弹性盒模型在交叉轴上排列*/
+				position:absolute;/*绝对定位*//*块浮动起来*//*后飘高于前飘*/
+				transform:rotateY(30deg);/* 变化：角度轴（角度值)(压缩效果)(原因:3wc认为是2D）*/
+				
+				
+			  }
+·		</style>
+	</head>
+	<body<!--用户在网页上看到的-->
+	
+
+		<div class="名字为xxx”></div><!--在网页内容中间划分出一个矩形区域  宽高-->
+		<div class="message">
+			<div class="messagelist">
+				<div class="listPic">
+					<img src="图片地址/images/1.jpg">
+				</div>
+				<div class="listText">
+					<p></p><!--图片别压缩会导致性能损失-->
+				</div>
+			</div>			
+				
+
+
+		</div><!--
+
+
+	</body>
+</html><!--接触标签-->
+<!--
+	网页内容：
+		1.标签 body元素 div元素 盒模型 块元素（矩形区域）
+		2.class：给元素加名字 有意义的，英文单词或者是可以辨别的引文缩写  命名规范
+		3.外边距:margin 设置一个元素与其他元素之间的,元素和浏览器之间的距离.
+		4.开发者工具：elements：上：所有的代码（user agent stylesheet：浏览器加的
+					C(覆盖:用户权重高于浏览器)SS
+				       下：选中的元素的代码，以及预览
+		5.w3c 普通流：一个块元素在父元素中是如何排列的：《1.从上往下《2.从左开始《3.一个块元素占一行
+		6.前端：企业/组织/人展示内容的渠道之一<云：前端:<webapp/小程序/在线游戏><本地软件>网站<文字/视频/沉浸式网站/图形><端:软件：pc：win/l/u //移动：ios/android>
+			http://matrix-civilization.com/html/webcourse.html
+			
